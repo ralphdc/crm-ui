@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="" role="navigation" id="topnav">
+          <div class="container-fluid xgd-crm-nav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand xgd-crm-brand" href="#"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="xgd-title-title">欢迎您，二狗同志！</a></li>
+                <li>
+                    <a href="#" class="xgd-title-title"><img src="./images/login-out.png" style="vertical-align:middle;">&nbsp;&nbsp;退出系统
+                    </a>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+
+
+
+          <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#">客户业务管理</a></li>
+              <li role="presentation"><a href="#">客户服务管理</a></li>
+              <li role="presentation"><a href="#">客户管理</a></li>
+              <li role="presentation"><a href="#">报表管理</a></li>
+              <li role="presentation"><a href="#">基础功能</a></li>
+              <li role="presentation"><a href="#">产品管理</a></li>
+              <li role="presentation"><a href="#">资源管理</a></li>
+              <li role="presentation"><a href="#">交易管理</a></li>
+              <li role="presentation"><a href="#">业务平台管理</a></li>
+              <li role="presentation"><a href="#">清结算管理</a></li>
+          </ul>
+
+
+      </nav>
+      <ol class="breadcrumb xgd-location-nav" id="middelnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+      </ol>
+      <div class="container-fluid" id="footnav">
+        <div class="row">
+          <div class="col-md-2" style="padding:0px; margin:0px; margin-left:-15px;" >
+            <div class="panel-group table-responsive" role="tablist" id="xgd-content-left">
+              <div class="panel panel-primary leftMenu">
+                  <!-- 利用data-target指定要折叠的分组列表 -->
+                  <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse" data-target="#collapseListGroup1" role="tab" >
+                      <h4 class="panel-title">
+                          分组1
+                          <span class="glyphicon glyphicon-chevron-up right"></span>
+                      </h4>
+                  </div>
+                  <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                  <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <!-- 利用data-target指定URL -->
+                          <button class="menu-item-left" data-target="test2.html">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-1
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-2
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-3
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-4
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-5
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-6
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-7
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-8
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-9
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-10
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项1-11
+                          </button>
+                        </li>
+                      </ul>
+                  </div>
+              </div><!--panel end-->
+              <div class="panel panel-primary leftMenu">
+                  <div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="tab" >
+                      <h4 class="panel-title">
+                          分组2
+                          <span class="glyphicon glyphicon-chevron-down right"></span>
+                      </h4>
+                  </div>
+                  <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2">
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项2-1
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项2-2
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项2-3
+                          </button>
+                        </li>
+                        <li class="list-group-item">
+                          <button class="menu-item-left">
+                              <span class="glyphicon glyphicon-triangle-right"></span>分组项2-4
+                          </button>
+                        </li>
+                      </ul>
+                  </div>
+              </div>  
+            </div>
+          </div><!-- col-md-2 END-->
+          <div class="col-md-10" style="padding:0px; margin:0px;">
+          <div style="overflow-x:scroll;" id="xgd-content-right">
+ dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfddddddddffffffff
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+     <script>
+        $(function(){
+            $(".panel-heading").click(function(e){
+                /*切换折叠指示图标*/
+                $(this).find("span").toggleClass("glyphicon-chevron-down");
+                $(this).find("span").toggleClass("glyphicon-chevron-up");
+            });
+        });
+
+        winHeight = $(window).height();
+
+        topHeight = $("#topnav").height();
+        midHeight = $("#middelnav").height();
+
+        wantHeight = winHeight - topHeight - midHeight;
+        $("#footnav").height(wantHeight);
+
+        console.log(winHeight);
+        console.log(topHeight);
+        console.log(midHeight);
+        console.log(wantHeight);
+
+       
+
+       
+
+
+        </script>
+
+
+  </body>
+</html>

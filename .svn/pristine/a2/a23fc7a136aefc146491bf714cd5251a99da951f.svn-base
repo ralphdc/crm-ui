@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="./lib/bootstrap-dialog/css/bootstrap-dialog.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="overflow:hidden">
+      <nav class="" role="navigation" id="topnav">
+          <div class="container-fluid xgd-crm-nav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand xgd-crm-brand" href="#"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="xgd-title-title">欢迎您，二狗同志！</a></li>
+                <li>
+                    <a href="#" class="xgd-title-title"><img src="./images/login-out.png" style="vertical-align:middle;">&nbsp;&nbsp;退出系统</a>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+
+          <ul class="nav nav-tabs xgd-nav-two" role="tablist">
+              <li role="presentation" class="active"><a href="#">客户业务管理</a></li>
+              <li role="presentation"><a href="#">客户服务管理</a></li>
+              <li role="presentation"><a href="#">客户管理</a></li>
+              <li role="presentation"><a href="#">报表管理</a></li>
+              <li role="presentation"><a href="#">基础功能</a></li>
+              <li role="presentation"><a href="#">产品管理</a></li>
+              <li role="presentation"><a href="#">资源管理</a></li>
+              <li role="presentation"><a href="#">交易管理</a></li>
+              <li role="presentation"><a href="#">业务平台管理</a></li>
+              <li role="presentation"><a href="#">清结算管理</a></li>
+          </ul>
+
+      </nav>
+      <ol class="breadcrumb xgd-location-nav" id="middelnav">
+        <li><img src="./images/index-home-ico.png"></li>
+        <li><a href="#">当前位置：</a></li>
+        <li><a href="#">客户业务管理</a></li>
+      </ol>
+      <div class="container-fluid" id="footnav">
+        <div class="row">
+          <div class="col-md-2" style="padding:0px; margin:0px; margin-left:-15px; background:#3a404e;" >
+            <div class="panel-group table-responsive" role="tablist" id="xgd-content-left">
+              <ul>
+                <li class="firstPanel">
+                  <h4 onclick="togglePanel(this,'h4')">
+                    <p>待处理业务</p>
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </h4>
+                  <ul class="secondPanel">
+                    <li>
+                      <h5 onclick="togglePanel(this,'h5')">
+                        <span class="glyphicon glyphicon-chevron-up"></span>
+                        <p>进件</p>
+                      </h5>
+                      <ul class="thirdPanel">
+                        <li><a href="/">进件审核</a></li>
+                        <li class="bottom"><a href="/">确认押金收取</a></li>
+                      </ul>
+                    </li>
+                     <li>
+                      <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>加机</p></h5>
+                       <ul class="thirdPanel">
+                        <li><a href="/">加机审核</a></li>
+                        <li class="bottom"><a href="/">确认押金收取</a></li>
+                      </ul>
+                    </li>
+                     <li>
+                      <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>撤机</p></h5>
+                      <ul class="thirdPanel">
+                        <li><a href="/">补全撤机信息</a></li>
+                        <li><a href="/">电话回访</a></li>
+                        <li><a href="/">重新启用</a></li>
+                        <li><a href="/">确认旧机回收</a></li>
+                        <li><a href="/">确认撤机单据</a></li>
+                        <li><a href="/">退押金审批</a></li>
+                        <li><a href="/">生成退款单</a></li>
+                        <li class="bottom"><a href="/">退押金</a></li>
+                      </ul>
+                    </li>
+                     <li>
+                      <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>换机</p></h5>
+                       <ul class="thirdPanel">
+                        <li class="bottom"><a href="/">确认旧机回收</a></li>
+                      </ul>
+                    </li>
+                     <li>
+                      <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>变更</p></h5>
+                       <ul class="thirdPanel">
+                          <li><a href="/">变更扣率审核</a></li>
+                          <li class="bottom"><a href="/">变更其他审核</a></li>
+                      </ul>
+                    </li>
+                     <li>
+                      <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>白名单审核</p></h5>
+                    </li>
+                  </ul>
+                </li>
+                <li class="firstPanel">
+                  <h4 onclick="togglePanel(this,'h4')"><p>已处理业务</p><span class="glyphicon glyphicon-plus"></span></h4>
+                  <ul class="secondPanel">
+                    <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>已处理业务</p></h5></li>
+                  </ul>
+                </li>
+                 <li class="firstPanel">
+                  <h4 onclick="togglePanel(this,'h4')"><p>所有业务</p><span class="glyphicon glyphicon-plus"></span></h4>
+                  <ul class="secondPanel">
+                    <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>所有业务</p></h5></li>
+                  </ul>
+                </li>
+                <li class="firstPanel">
+                <h4 onclick="togglePanel(this,'h4')"><p>流程监控</p><span class="glyphicon glyphicon-plus"></span></h4>
+                  <ul class="secondPanel">
+                     <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>流程监控</p></h5></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div><!-- col-md-2 END-->
+          <div class="col-md-10" style="padding:0px; margin:0px; padding-top:15px;padding-left:15px; ">
+            <div id="xgd-content-right">
+              <form class="form-inline" role="form" id="brForm" wdlength="0.68">
+              <div class="form-group">
+                <label class="control-label">申请日期:</label>
+                <input type="text" class="form-control input-sm"  placeholder="开始时间" id="dateStart" data-date-format="yyyy-mm-dd">
+                -
+                <input type="text" class="form-control input-sm"  placeholder="结束时间" id="dateEnd" data-date-format="yyyy-mm-dd">
+              </div>
+
+              <div class="form-group xgd-padding-left-10">
+                <label class="control-label">商户名称:</label>
+                <input type="text" class="form-control input-sm"  placeholder="">
+              </div>
+
+              <div class="form-group xgd-padding-left-10">
+                <label class="control-label">业务来源:</label>
+                <input type="text" class="form-control input-sm"  placeholder="">
+              </div>
+
+              <div class="form-group xgd-padding-left-10">
+                <label class="control-label">商户入网类型:</label>
+                <input type="text" class="form-control input-sm"  placeholder="">
+              </div>
+              <div style="height:15px; clear: both; "></div> 
+              <div class="form-group">
+                <label class="control-label">&nbsp;&nbsp;&nbsp;代理商:</label>
+                <input type="text" class="form-control input-sm" size="48"  placeholder="">
+              </div>
+
+              <div class="form-group xgd-padding-left-13">
+                <label class="control-label ">&nbsp;&nbsp;&nbsp;商户号:</label>
+                <input type="text" class="form-control input-sm"  placeholder="">
+              </div>
+
+              <div class="form-group xgd-padding-left-13">
+                <label class="control-label ">&nbsp;&nbsp;&nbsp;终端号:</label>
+                <input type="text" class="form-control input-sm"  placeholder="">
+              </div>
+
+              <div class="form-group xgd-padding-left-40">
+                <label class="control-label ">&nbsp;&nbsp;&nbsp;机身号:</label>
+                <input type="text" class="form-control input-sm"  placeholder="">
+              </div>
+
+              <div class="form-group xgd-padding-left-80">
+                <button class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;查询&nbsp;&nbsp;&nbsp;&nbsp;</button>
+              </div>
+
+               <div class="form-group xgd-padding-left-40">
+                <button class="btn btn-warning">&nbsp;&nbsp;&nbsp;&nbsp;重置&nbsp;&nbsp;&nbsp;&nbsp;</button>
+              </div>
+
+
+
+
+              <div style="height:15px; clear: both; "></div> 
+              <button type="button" class="btn btn-success">&nbsp;&nbsp;分发任务&nbsp;&nbsp;</button>
+            </form>
+            <div id="tableBox">
+              <table class="table table-striped table-hover table-bordered xgd-margin-top-20 xgd-table">
+                <thead>
+                  <td> 
+                      <div class="checkbox">
+                        <label><input type="checkbox"> &nbsp;&nbsp;全选</label>
+                      </div>
+                  </td>
+                  <td>任务名称</td>
+                  <td>业务来源</td>
+                  <td>撤机类型</td>
+                  <td>商户名称</td>
+                  <td>商户号</td>
+                  <td>终端号</td>
+                  <td>机身号</td>
+                  <td>白名单类型</td>
+                  <td>归属公司</td>
+                  <td>业务员</td>
+                  <td>代理商名称</td>
+                  <td>渠道类型</td>
+                  <td>商户入网类型</td>
+                  <td>快递公司</td>
+                  <td>快递单号</td>
+                  <td>业务申请人</td>
+                  <td>申请时间</td>
+                  <td>当前处理人/机构</td>
+                  <td>备注</td>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>
+                      <a href="#" class="clientDetail">
+                        <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                   <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                   <tr>
+                    <td class="check"> 
+                      <input type="checkbox" />
+                    </td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">补全撤机信息</a></td>
+                    <td><a class="xgd-td-a" href="./check-detail.html" target="_blank">代理商平台</a></td>
+                    <td>零交易撤机</td>
+                    <td>深圳大成银行</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td class="text-center">--</td>
+                    <td>直营</td>
+                    <td>租赁合同</td>
+                    <td>顺丰</td>
+                    <td>6234567890</td>
+                    <td>--</td>
+                    <td>2016-10-21 09:51:21</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="paginator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./lib/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./lib/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./lib/bootstrap-dialog/js/bootstrap-dialog.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./lib/bootstrap-paginator/js/bootstrap-paginator.js" charset="UTF-8"></script>
+
+
+   
+    <script type="text/javascript">
+      xgd_menu = [0,2,0];
+
+     $('#dateStart').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+
+
+      $('#dateEnd').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+
+      $(document).ready(function(){
+         var options = {
+            currentPage: 3,
+            totalPages: 10
+        }
+
+        $('#paginator').bootstrapPaginator(options);
+      })
+    </script>
+    <!-- scripts by this app -->
+    
+    <script src="./js/app.js"></script>
+
+
+  </body>
+</html>

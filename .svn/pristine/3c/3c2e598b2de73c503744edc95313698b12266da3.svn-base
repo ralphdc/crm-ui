@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="overflow:hidden">
+      <nav class="" role="navigation" id="topnav">
+          <div class="container-fluid xgd-crm-nav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand xgd-crm-brand" href="#"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="xgd-title-title">欢迎您，二狗同志！</a></li>
+                <li>
+                    <a href="#" class="xgd-title-title"><img src="./images/login-out.png" style="vertical-align:middle;">&nbsp;&nbsp;退出系统</a>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+
+
+
+          <ul class="nav nav-tabs xgd-nav-two" role="tablist">
+              <li role="presentation" class="active"><a href="#">客户业务管理</a></li>
+              <li role="presentation"><a href="#">客户服务管理</a></li>
+              <li role="presentation"><a href="#">客户管理</a></li>
+              <li role="presentation"><a href="#">报表管理</a></li>
+              <li role="presentation"><a href="#">基础功能</a></li>
+              <li role="presentation"><a href="#">产品管理</a></li>
+              <li role="presentation"><a href="#">资源管理</a></li>
+              <li role="presentation"><a href="#">交易管理</a></li>
+              <li role="presentation"><a href="#">业务平台管理</a></li>
+              <li role="presentation"><a href="#">清结算管理</a></li>
+          </ul>
+
+
+      </nav>
+      <ol class="breadcrumb xgd-location-nav" id="middelnav">
+        <li><img src="./images/index-home-ico.png"></li>
+        <li><a href="#">当前位置：</a></li>
+        <li><a href="#">客户业务管理</a></li>
+        
+      </ol>
+      <div class="container-fluid" id="footnav">
+        <div class="row">
+          <div class="col-md-2" style="padding:0px; margin:0px; margin-left:-15px; background:#3a404e;" >
+            <div class="panel-group table-responsive" role="tablist" id="xgd-content-left">
+              <ul>
+              <li>
+                <h4 onclick="togglePanel(this,'h4')">
+                  <p>待处理业务</p>
+                  <span class="glyphicon glyphicon-plus"></span>
+                </h4>
+                <ul class="secondPanel">
+                  <li>
+                    <h5 onclick="togglePanel(this,'h5')">
+                      <span class="glyphicon glyphicon-chevron-up"></span>
+                      <p>进件</p>
+                    </h5>
+                    <ul class="thirdPanel">
+                      <li><a href="/">进件审核</a></li>
+                      <li class="bottom"><a href="/">确认押金收取</a></li>
+                    </ul>
+                  </li>
+                   <li>
+                    <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>加机</p></h5>
+                     <ul class="thirdPanel">
+                      <li><a href="/">加机审核</a></li>
+                      <li class="bottom"><a href="/">确认押金收取</a></li>
+                    </ul>
+                  </li>
+                   <li>
+                    <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>撤机</p></h5>
+                    <ul class="thirdPanel">
+                      <li><a href="/">补全撤机信息</a></li>
+                      <li><a href="/">电话回访</a></li>
+                      <li><a href="/">重新启用</a></li>
+                      <li><a href="/">确认旧机回收</a></li>
+                      <li><a href="/">确认撤机单据</a></li>
+                      <li><a href="/">退押金审批</a></li>
+                      <li><a href="/">生成退款单</a></li>
+                      <li class="bottom"><a href="/">退押金</a></li>
+                    </ul>
+                  </li>
+                   <li>
+                    <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>换机</p></h5>
+                     <ul class="thirdPanel">
+                      <li class="bottom"><a href="/">确认旧机回收</a></li>
+                    </ul>
+                  </li>
+                   <li>
+                    <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>变更</p></h5>
+                     <ul class="thirdPanel">
+                        <li><a href="/">变更扣率审核</a></li>
+                        <li class="bottom"><a href="/">变更其他审核</a></li>
+                    </ul>
+                  </li>
+                   <li>
+                    <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>白名单审核</p></h5>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4 onclick="togglePanel(this,'h4')"><p>已处理业务</p><span class="glyphicon glyphicon-plus"></span></h4>
+                <ul class="secondPanel">
+                  <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>已处理业务</p></h5></li>
+                </ul>
+              </li>
+               <li>
+                <h4 onclick="togglePanel(this,'h4')"><p>所有业务</p><span class="glyphicon glyphicon-plus"></span></h4>
+                <ul class="secondPanel">
+                  <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>所有业务</p></h5></li>
+                </ul>
+              </li>
+              <li>
+              <h4 onclick="togglePanel(this,'h4')"><p>流程监控</p><span class="glyphicon glyphicon-plus"></span></h4>
+                <ul class="secondPanel">
+                   <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>流程监控</p></h5></li>
+                </ul>
+              </li>
+
+
+
+              </ul>
+            </div>
+          </div><!-- col-md-2 END-->
+          <div class="col-md-10" style="padding:0px; margin:0px; padding-top:15px;">
+            <div style="overflow-x:auto;" id="xgd-content-right">
+            <!-- Small boxes (Stat box) -->
+              <div class="row xgd-cancel-pad-margin">
+                <div class="col-md-3 col-xs-6 ">
+                  <!-- small box -->
+                  <div class="xgd-small-box">
+                    <div class="xgd-inner">
+                      <div class="xgd-inner-time">12:00:00</div>
+                    </div>
+                    <div class="xgd-inner-box">
+                      <p>星期五&nbsp;&nbsp;&nbsp;&nbsp;2016年9月30号</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./col -->
+                 <div class="col-md-3 col-xs-6 ">
+                  <!-- small box -->
+                  <div class="xgd-small-box-2">
+                    <div class="xgd-inner">
+                      <p>待办事项52条</p>
+                    </div>
+                    <div class="xgd-inner-box-2">
+                      <p>个人任务</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./col -->
+                 <div class="col-md-3 col-xs-6 ">
+                  <!-- small box -->
+                  <div class="xgd-small-box-3">
+                    <div class="xgd-inner">
+                      <p>待办事项52条</p>
+                    </div>
+                    <div class="xgd-inner-box-3">
+                      <p>个人任务</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+
+               <div class="row xgd-cancel-pad-margin xgd-margin-top-40">
+                <div class="col-md-6">
+                  <div class="panel panel-default" id="duty">
+                    <div class="panel-heading">
+                       <div class="row xgd-cancel-pad-margin">
+                        <div class="col-md-4"><h3 class="panel-title">我的任务</h3></div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-3"><div class="xgd-float-right">刷新</div></div>
+                       </div>
+                      
+                    </div>
+                    <div class="panel-body xgd-cancel-pad">
+                      <table class="table xgd-inner-table ">
+                        <tr>
+                          <td><p>进件申请</p></td>
+                          <td><p><a>待处理业务&nbsp;(&nbsp;<span class="xgd-color-d94714">3</span>&nbsp;)</a></p></td>
+                        </tr>
+                        <tr>
+                          <td><p>加机申请</p></td>
+                          <td><p><a>待处理业务&nbsp;(&nbsp;<span class="xgd-color-d94714">3</span>&nbsp;)</a></p></td>
+                        </tr>
+                        <tr>
+                          <td><p>换机申请</p></td>
+                          <td><p><a>待处理业务&nbsp;(&nbsp;<span class="xgd-color-d94714">3</span>&nbsp;)</a></p></td>
+                        </tr>
+                        <tr>
+                          <td><p>撤机申请</p></td>
+                          <td><p><a>待处理业务&nbsp;(&nbsp;<span class="xgd-color-d94714">3</span>&nbsp;)</a></p></td>
+                        </tr>
+                        <tr>
+                          <td><p>变更申请</p></td>
+                          <td><p><a>待处理业务&nbsp;(&nbsp;<span class="xgd-color-d94714">3</span>&nbsp;)</a></p></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><!--panel end -->
+                </div>
+                <div class="col-md-5">
+                   <div class="panel panel-default" id="charts">
+                    <div class="panel-heading">
+                       <div class="row xgd-cancel-pad-margin">
+                        <div class="col-md-4"><h3 class="panel-title">统计表</h3></div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-3"><div class="xgd-float-right">刷新</div></div>
+                       </div>
+                      
+                    </div>
+                    <div class="panel-body xgd-cancel-pad">
+                      <div class="xgd-height-260">
+                      </div>
+                    </div>
+                  </div><!--panel end -->
+                </div>
+               </div>
+               <!-- /.row -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <!-- scripts by this app -->
+    <script src="./js/app.js"></script>
+
+  </body>
+</html>

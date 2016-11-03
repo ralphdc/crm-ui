@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CRM登录首页</title>
+<link rel="stylesheet" type="text/css" href="./css/login.css"  />
+</head>
+<body scroll="no">
+<img src="./images/loginbg.png" id="img" />
+
+<div class="login_box">
+	
+</div>
+</body>
+</html>

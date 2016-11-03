@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class="row" style="padding-top:15px;">
+          <div class="col-md-8" >
+            <form role="form" class="form-horizontal">
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><h4>进件审核</h4></div>
+                  <div class="panel-body">
+                    <table class="table table-strip table-hover xgd-cancel-pad-margin">
+                      <tr>
+                        <td>业务类型:</td>
+                        <td>进件</td>
+                        <td>业务编号:</td>
+                        <td>RW201601011234</td>
+                        <td>业务申请人:</td>
+                        <td>张三</td>
+                        <td>业务申请时间:</td>
+                        <td>2016/01/01 23:59:59</td>
+                      </tr>
+                      <tr>
+                        <td>代理商:</td>
+                        <td>深圳市XXX公司</td>
+                        <td>商户名称:</td>
+                        <td>深圳市大成商行</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" href="#bussinessInfo">商户信息</a></h4>
+                  </div>
+                  <div id="bussinessInfo" class="collapse in">
+                    <div class="panel-body">
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="form-group">
+                              <label class="sr-only">入网类型：</label>
+                              <input type="text" class="form-control" name="netType" />
+                            </div>
+
+
+                           
+                          </td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div><!-- panel end -->
+             </div>
+          </form>
+          </div>
+          </div><!-- col-md-2 END-->
+          <div class="col-md-4" style="padding:0px; margin:0px; padding-top:15px;padding-left:15px; ">
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    
+    <script type="text/javascript">
+      xgd_menu = [0,0,0];
+    </script>
+    <!-- scripts by this app -->
+    
+
+  </body>
+</html>

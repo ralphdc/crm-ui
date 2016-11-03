@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class="row" style="padding-top:15px;">
+          <div class="col-md-8" >
+            <form role="form" class="form-horizontal">
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><h4>进件审核</h4></div>
+                  <div class="panel-body">
+                    <table class="table table-strip table-hover xgd-cancel-pad-margin">
+                      <tr>
+                        <td>业务类型:</td>
+                        <td>进件</td>
+                        <td>业务编号:</td>
+                        <td>RW201601011234</td>
+                        <td>业务申请人:</td>
+                        <td>张三</td>
+                        <td>业务申请时间:</td>
+                        <td>2016/01/01 23:59:59</td>
+                      </tr>
+                      <tr>
+                        <td>代理商:</td>
+                        <td>深圳市XXX公司</td>
+                        <td>商户名称:</td>
+                        <td>深圳市大成商行</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" href="#bussinessInfo">商户信息</a></h4>
+                  </div>
+                  <div id="bussinessInfo" class="collapse in xgd-padding-right-15">
+                    <div class="panel-body">
+                       <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                              <label class="col-sm-5 control-label">入网类型：</label>
+                              <div class="col-sm-7"><input type="text" class="form-control " name="netType" /></div>
+                          </div>
+
+                         <div class="form-group">
+                            <label class="col-sm-5 control-label">营业执照号：</label>
+                            <div class="col-sm-7"><input type="text" class="form-control " name="licenseNumber" /></div>
+                          </div>
+
+                          <div class="form-group">
+                            <label class="col-sm-5 control-label">营业执照地址：</label>
+                            <div class="col-sm-7"><input type="text" class="form-control " name="licenceAddr" /></div>
+                          </div>
+
+                          <div class="form-group">
+                            <label class="col-sm-5 control-label">法人证件信息：</label>
+                            <div class="col-sm-3">
+                              <input type="text" class="form-control " name="idType" />
+                            </div>
+                            <div class="col-sm-4">
+                              <input type="text" class="form-control " name="idNumber" />
+                            </div>
+                          </div>
+                        </div>
+                        
+
+                        <div class="col-md-7">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label">商户名称:</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" name="bussinessName" />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label">营业起止时间:</label>
+                            <div class="col-sm-4">
+                              <input type="text" class="form-control" name="bsStartTime" placeholder="开始时间" />
+                            </div>
+                            <div class="col-sm-4">
+                              <input type="text" class="form-control" name="bsEndTime" placeholder="结束时间" />
+                            </div>
+                          </div>
+
+                           <div class="form-group">
+                              <label class="col-sm-4 control-label">法人代表姓名/手机号:</label>
+                              <div class="col-sm-3">
+                                <input type="text" class="form-control" name="agentName" />
+                              </div>
+                              <div class="col-sm-5">
+                                <input type="text" class="form-control" name="agentMobile" />
+                              </div>
+                           </div>
+                        </div>
+                       </div><!-- row end -->
+
+                       <div class="form-group">
+                        <label class="col-sm-2 control-label">经营范围：</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" rows="3" style="resize:none"></textarea>
+                        </div>
+                       </div><!-- form-group end -->
+
+                       <div class="form-group">
+                        <label class="col-sm-2 control-label">附件：</label>
+                        <div class="col-sm-10">
+                          <ul class="xgd-in-check-ul">
+                            <li>
+                              <img src="./images/slt.png">
+                              <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                               <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                              <p class="text-center">营业执照</p>
+                            </li>
+                          </ul>
+                        </div>
+                       </div><!-- form-group end -->
+                    </div>
+                  </div>
+                </div><!-- panel end -->
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" href="#balanceInfo">结算信息</a></h4>
+                  </div>
+                  <div id="balanceInfo" class="collapse in">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label">收款类型：</label>
+                            <div class="col-sm-8">
+                              <input type="text" name="cashType" class="form-control" placeholder="对公" />
+                            </div>
+                          </div>
+                        </div>  <!-- col-md-5  end-->
+                        <div class="col-md-7">
+                        </div>  <!-- col-md-7  end-->
+                      </div><!--row end -->
+
+                       <div class="row">
+                        <div class="col-md-5">
+                           <div class="form-group">
+                            <label class="col-sm-4 control-label">收款户名称：</label>
+                            <div class="col-sm-8">
+                              <input type="text" name="acceptName" class="form-control" placeholder="" />
+                            </div>
+                          </div>
+                        </div>  <!-- col-md-5  end-->
+                        <div class="col-md-7">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label">银行卡号：</label>
+                            <div class="col-sm-8">
+                              <input type="text" name="cardNumber" class="form-control" placeholder="" />
+                            </div>
+                          </div>
+                        </div>  <!-- col-md-7  end-->
+                      </div><!--row end -->
+
+                      <div class="row">
+                        <div class="col-md-5">
+                           <div class="form-group">
+                            <label class="col-sm-4 control-label">开户行：</label>
+                            <div class="col-sm-8">
+                              <input type="text" name="acceptName" class="form-control" placeholder="" />
+                            </div>
+                          </div>
+                        </div>  <!-- col-md-5  end-->
+                        <div class="col-md-7">
+                              <input type="text" name="cardNumber" class="form-control" placeholder="" />
+                        </div>  <!-- col-md-7  end-->
+                      </div><!--row end -->
+
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">附件：</label>
+                        <div class="col-sm-10">
+                          <ul class="xgd-in-check-ul">
+                            <li>
+                              <img src="./images/slt.png">
+                              <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                               <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                              <p class="text-center">营业执照</p>
+                            </li>
+                          </ul>
+                        </div>
+                       </div><!-- form-group end -->
+                    </div>
+                  </div>
+                </div><!--panel end -->
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#feeInfo" data-toggle="collapse">扣率信息</a>
+                    </h4>
+                  </div><!-- panel-heading end -->
+                  <div id="feeInfo" class="collapse in">
+                    <div class="panel-body">
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">MCC：</label>
+                        <div class="col-sm-2">
+                          <input type="text" name=""  class="form-control" placeholder="民生类">
+                        </div>
+                        <div class="col-sm-2">
+                          <input type="text" name=""  class="form-control" placeholder="5411">
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name=""  class="form-control" placeholder="大型仓储式超级市场">
+                        </div>
+                      </div><!-- form-group end -->
+
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">内卡借记卡扣率：</label>
+                        <div class="col-sm-2">
+                          <div class="input-group">
+                            <input type="text" name=""  class="form-control" placeholder="0.49">
+                            <div class="input-group-addon">%</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="col-sm-5 control-label" >封顶：</label>
+                            <div class="col-sm-7">
+                              <div class="input-group">
+                                <input type="text" name=""  class="form-control" placeholder="19">
+                                <div class="input-group-addon">元</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="form-group">
+                            <label class="col-sm-12 control-label">参考值：0.5%以上，封顶20元以上</label>
+                          </div><!-- form-group end -->
+                        </div>
+                      </div><!-- form-group end -->
+
+
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">内卡贷记卡扣率：</label>
+                        <div class="col-sm-2">
+                          <div class="input-group">
+                            <input type="text" name=""  class="form-control" placeholder="0.58">
+                            <div class="input-group-addon">%</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="form-group">
+                            <label class="col-sm-12 control-label">参考值：0.6%以上</label>
+                          </div><!-- form-group end -->
+                        </div>
+                      </div><!-- form-group end -->
+
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">外卡扣率：</label>
+                        <div class="col-sm-2">
+                          <div class="input-group">
+                            <input type="text" name=""  class="form-control" placeholder="1.8">
+                            <div class="input-group-addon">%</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="form-group">
+                            <label class="col-sm-12 control-label">参考值：2%以上</label>
+                          </div><!-- form-group end -->
+                        </div>
+                      </div><!-- form-group end -->
+
+
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">支付宝：</label>
+                        <div class="col-sm-2">
+                          <div class="input-group">
+                            <input type="text" name=""  class="form-control" placeholder="0.5">
+                            <div class="input-group-addon">%</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label class="col-sm-5 control-label" >微信：</label>
+                            <div class="col-sm-7">
+                              <div class="input-group">
+                                <input type="text" name=""  class="form-control" placeholder="0.5">
+                                <div class="input-group-addon">%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="form-group">
+                            <label class="col-sm-12 control-label">参考值：0.6%</label>
+                          </div><!-- form-group end -->
+                        </div>
+                      </div><!-- form-group end -->
+                    </div>
+                  </div>
+                </div><!--panel end-->
+
+
+
+             </div>
+          </form>
+          </div><!-- md-8 end -->
+          <div class="col-md-4" style="padding:0px; margin:0px; padding-top:15px;padding-left:15px; "></div>
+        </div>
+        </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    
+    <script type="text/javascript">
+      xgd_menu = [0,0,0];
+
+      $(".xgd-in-check td").css({"padding":"0px","margin":"0px","padding-top":"8px"})
+    </script>
+    <!-- scripts by this app -->
+    
+
+  </body>
+</html>

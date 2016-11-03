@@ -1,0 +1,47 @@
+  $(function(){
+
+    //初始化页面对齐；
+    winHeight   = $(window).height();
+    topHeight   = $("#topnav").height();
+    midHeight   = $("#middelnav").height();
+    wantHeight  = winHeight - topHeight - midHeight;
+    $("#xgd-content-left").height(wantHeight).css({"overflow-y":"auto"});
+    $("#xgd-content-right").height(wantHeight).css({"overflow-y":"auto"});
+
+
+
+   
+});
+
+//折叠菜单；
+function togglePanel(obj,menuType)
+{
+    if($(obj).next("ul").is(":visible"))
+    {
+        //可见=>不可见
+        $(obj).next("ul").slideUp();
+        if(menuType == 'h4')
+        {
+            $(obj).find("span").removeClass('glyphicon-minus').addClass('glyphicon-plus');
+        }else{
+            $(obj).find("span").removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+        }
+    }else{
+        //不可见=>可见
+         $(obj).next("ul").slideDown();
+         //$(obj).next("ul").find("h5").removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+         $(obj).parent().siblings("li").find("ul").slideUp();
+        if(menuType == 'h4')
+        {
+            $(obj).find("span").removeClass('glyphicon-plus').addClass('glyphicon-minus');
+            $(obj).parent().siblings("li").find("h4").find("span").removeClass('glyphicon-minus').addClass('glyphicon-plus');
+            $(obj).next("ul").find("h5").find("span").removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+        }else{
+            $(obj).find("span").removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+            $(obj).parent().siblings("li").find("h5").find("span").removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+        }
+
+       
+       
+    }
+}

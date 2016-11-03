@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CRM登录首页</title>
+<link rel="stylesheet" type="text/css" href="./css/login.css"  />
+
+<!-- Bootstrap -->
+    <link href="./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+</head>
+<body scroll="no">
+<img src="./images/loginbg.png" id="img" />
+<div class="login_box">
+	<div class="login-box-pad40">
+	<form role="form">
+		  <div class="input-group xgd-input-group-addon">
+		     	<div class="input-group-addon" style="padding:0px 10px; background:#FFF;"><img src="./images/login-header.png" /></div>
+		    	<input type="text" class="form-control"  placeholder="请输入用户名" required="required" style="height:43px">
+		  </div>
+		  <div class="input-group">
+		     	<div class="input-group-addon" style="padding:0px 10px; background:#FFF;"><img src="./images/login-pwd.png" /></div>
+		    	<input type="password" class="form-control placeholder="Password" placeholder="请输入密码" required="required" style="height:43px">
+		  </div>
+		  <div class="form-group xgd-input-group-addon">
+    		<input type="text" class="form-control" id="" required="required"  placeholder="请输入验证码" style="width:160px;height:43px;float:left;" />
+    		<div  style="padding:0px 10px; float:right"><img src="./images/login-check-code.png" /></div>
+  		  </div>
+  		  <div class="xgd-pad-top-60" >
+  		  		<button type="submit" class="btn btn-warning xgd-login-btn" style="font-family: Microsoft YaHei; font-weight: bold; font-size:18px;" >登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+  		  </div>
+  		  <div class="xgd-login-pad-10 xgd-text-center">
+  		  	<p><a class="xgd-font-color xgd-font-size-16" href="javascript:void(0)">忘记密码？</a></p>
+  		  </div>
+	</form>
+	</div>
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

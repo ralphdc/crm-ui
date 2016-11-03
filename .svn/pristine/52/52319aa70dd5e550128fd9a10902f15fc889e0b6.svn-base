@@ -1,0 +1,394 @@
+/** 公共样式 */
+body
+{
+	font-family: "Microsoft YaHei";
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+ul
+{
+	list-style: none;
+	padding:0px;
+	margin:0px;
+}
+
+h4,h5
+{
+	padding: 0px;
+	margin:0px;
+}
+.xgd-cancel-pad-margin
+{
+	padding:0px;
+	margin:0px;
+}
+
+.xgd-cancel-pad
+{
+	padding:0px;
+}
+
+.xgd-margin-top-40
+{
+	margin-top: 40px;
+}
+
+.xgd-float-right
+{
+	float:right;
+}
+
+.xgd-color-d94714
+{
+	color:#d94714;
+}
+
+
+.xgd-bg-color-2f323b
+{
+	background: #2f323b;
+}
+
+.xgd-bg-color-fff
+{
+	background: #FFF;
+}
+
+
+.xgd-height-260
+{
+	height: 260px;
+}
+
+
+.xgd-cancel-radius
+{
+	border-radius: 0px;
+}
+
+
+
+/** 头部菜单 */
+
+.navbar{
+	height:78px;
+}
+
+
+.navbar-header
+{
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.xgd-crm-nav
+{
+	background: #579fe9;
+	height: 78px;
+}
+
+
+.xgd-crm-brand
+{
+	width: 305px; 
+	height: 47px; 
+	background:url("../images/logo.png") no-repeat;
+
+}
+
+.xgd-title-title{
+
+	font-family: "Microsoft YaHei";
+	color:#fbfffb;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+.xgd-content-right
+{
+	padding:20px;
+}
+
+/** 二级导航菜单 */
+
+.xgd-nav-two
+{
+	background: #2f323b;
+	border-bottom:0px;
+}
+
+.xgd-nav-two a
+{
+	color: #fafbff;
+	font-size: 16px;
+}
+
+.xgd-nav-two a:hover
+{
+	color: #000;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** 三级路径导航 */
+
+.xgd-location-nav
+{
+	margin-bottom: 0px;
+	background: #3a404e;
+	border-radius: 0px;
+}
+
+.xgd-location-nav a
+{
+	color: #fafbff;
+	font-size: 16px;
+}
+
+
+
+
+/**
+ * 左侧折叠菜单样式覆写；
+ */
+
+#xgd-content-left ul
+{
+}
+
+#xgd-content-left h4
+{
+	display: block;
+	height: 45px;
+	padding-left:30px;
+	position: relative;
+	background: #454c5c;
+	border-bottom: #39414e 1px solid;
+	cursor: pointer;
+}
+
+#xgd-content-left h4 p
+{
+	color:#FFF;
+	line-height: 45px;
+}
+
+#xgd-content-left h4 span
+{
+	position: absolute;
+	top:15px;
+	right: 20px;
+	color: #FFF;
+}
+
+
+
+
+
+#xgd-content-left h5
+{
+	display: block;
+	height: 35px;
+	padding-left:50px;
+	position: relative;
+}
+
+#xgd-content-left h5 p
+{
+	color:#FFF;
+	line-height: 35px;
+	font-size: 16px;
+}
+
+#xgd-content-left h5 span
+{
+	position: absolute;
+	top:12px;
+	left: 30px;
+	color: #FFF;
+}
+
+.secondPanel
+{
+	display: none;
+}
+
+.thirdPanel
+{
+	display: none;
+	padding-left: 50px;
+}
+
+.thirdPanel a
+{
+	color:#FFF;
+	line-height: 40px;
+	margin-left: 20px;
+}
+
+.thirdPanel li
+{
+	height: 40px;
+	display: block;
+
+	background: url("../images/inner-li-bg.png") no-repeat left top;
+}
+
+
+.thirdPanel li.bottom
+{
+	background: url("../images/inner-li-bg-bottom.png") no-repeat left top;
+}
+
+/***首页右侧***/
+
+.xgd-small-box
+{
+	display: block;
+	background: #5baff5;
+}
+
+.xgd-inner
+{
+	padding:30px 0 30px 50px;
+}
+
+.xgd-inner-time
+{
+	background: url("../images/inner-time.png") no-repeat 0 7px ;
+	font-size: 30px;
+	color:#FFF;
+	padding-left: 50px;
+}
+
+.xgd-inner-box
+{
+	padding: 15px 0px 15px 15px;
+	background: #55a6e8;
+}
+
+.xgd-inner-box p
+{
+	font-size: 22px;
+	color:#FFF;
+}
+
+
+
+.xgd-small-box-2
+{
+	display: block;
+	background: #ce83de;
+}
+
+.xgd-small-box-2 p
+{
+	font-size: 22px;
+	color:#FFF;
+}
+
+.xgd-inner-box-2
+{
+	padding: 15px 0px 15px 15px;
+	background: #c37dd3;
+}
+
+.xgd-inner-box-2 p
+{
+	display: block;
+	background: url("../images/inner-usr.png") no-repeat 0 0 ;
+	font-size: 22px;
+	color:#FFF;
+	padding-left: 50px;
+}
+
+
+
+.xgd-small-box-3
+{
+	display: block;
+	background: #55d98d;
+}
+
+.xgd-small-box-3 p
+{
+	font-size: 22px;
+	color:#FFF;
+}
+
+.xgd-inner-box-3
+{
+	padding: 15px 0px 15px 15px;
+	background: #51cf86;
+}
+
+.xgd-inner-box-3 p
+{
+	display: block;
+	background: url("../images/inner-usr-2.png") no-repeat 0 0 ;
+	font-size: 22px;
+	color:#FFF;
+	padding-left: 50px;
+}
+
+
+.xgd-inner-table
+{
+
+}
+
+.xgd-inner-table td
+{
+	padding:0;
+	margin:0;
+}
+
+
+
+
+.xgd-inner-table p
+{
+	line-height: 30px;
+	margin-bottom: 0px;
+}
+
+
+.xgd-inner-table a
+{
+	line-height: 30px;
+	color:#73a791;
+	font-size: 16px;
+}
+
+
+
+

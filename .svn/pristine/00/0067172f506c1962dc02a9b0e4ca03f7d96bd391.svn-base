@@ -1,0 +1,74 @@
+<ul>
+  <li>
+    <h4 onclick="togglePanel(this,'h4')">
+      <p>待处理业务</p>
+      <span class="glyphicon glyphicon-plus"></span>
+    </h4>
+    <ul class="secondPanel">
+      <li>
+        <h5 onclick="togglePanel(this,'h5')">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+          <p><a href="jinjian.html" target="">进件</a></p>
+        </h5>
+        <ul class="thirdPanel">
+          <li><a href="/">进件审核</a></li>
+          <li class="bottom"><a href="/">确认押金收取</a></li>
+        </ul>
+      </li>
+       <li>
+        <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>加机</p></h5>
+         <ul class="thirdPanel">
+          <li><a href="/">加机审核</a></li>
+          <li class="bottom"><a href="/">确认押金收取</a></li>
+        </ul>
+       </li>
+       <li>
+        <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>撤机</p></h5>
+        <ul class="thirdPanel">
+          <li><a href="/">补全撤机信息</a></li>
+          <li><a href="/">电话回访</a></li>
+          <li><a href="/">重新启用</a></li>
+          <li><a href="/">确认旧机回收</a></li>
+          <li><a href="/">确认撤机单据</a></li>
+          <li><a href="/">退押金审批</a></li>
+          <li><a href="/">生成退款单</a></li>
+          <li class="bottom"><a href="/">退押金</a></li>
+        </ul>
+      </li>
+       <li>
+        <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>换机</p></h5>
+         <ul class="thirdPanel">
+          <li class="bottom"><a href="/">确认旧机回收</a></li>
+        </ul>
+      </li>
+       <li>
+        <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>变更</p></h5>
+         <ul class="thirdPanel">
+            <li><a href="/">变更扣率审核</a></li>
+            <li class="bottom"><a href="/">变更其他审核</a></li>
+        </ul>
+      </li>
+       <li>
+        <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>白名单审核</p></h5>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h4 onclick="togglePanel(this,'h4')"><p>已处理业务</p><span class="glyphicon glyphicon-plus"></span></h4>
+    <ul class="secondPanel">
+      <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>已处理业务</p></h5></li>
+    </ul>
+  </li>
+   <li>
+    <h4 onclick="togglePanel(this,'h4')"><p>所有业务</p><span class="glyphicon glyphicon-plus"></span></h4>
+    <ul class="secondPanel">
+      <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>所有业务</p></h5></li>
+    </ul>
+  </li>
+  <li>
+  <h4 onclick="togglePanel(this,'h4')"><p>流程监控</p><span class="glyphicon glyphicon-plus"></span></h4>
+    <ul class="secondPanel">
+       <li> <h5 onclick="togglePanel(this,'h5')"><span class="glyphicon glyphicon-chevron-up"></span><p>流程监控</p></h5></li>
+    </ul>
+  </li>
+</ul>

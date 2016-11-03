@@ -1,0 +1,34 @@
+.navbar{
+	height:64px;
+}
+
+
+.navbar-header
+{
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.xgd-crm-nav
+{
+	background: #5298d6;
+}
+
+
+.xgd-crm-brand
+{
+	width: 305px; 
+	height: 47px; 
+	background:url("../images/logo.png") no-repeat;
+
+}
+
+.xgd-title-title{
+
+	font-family: "Microsoft YaHei";
+	color:#fbfffb;
+	font-size: 16px;
+	font-weight: bold;
+}

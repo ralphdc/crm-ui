@@ -1,0 +1,206 @@
+.navbar{
+	height:78px;
+}
+
+
+.navbar-header
+{
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.xgd-crm-nav
+{
+	background: #579fe9;
+	height: 78px;
+}
+
+
+.xgd-crm-brand
+{
+	width: 305px; 
+	height: 47px; 
+	background:url("../images/logo.png") no-repeat;
+
+}
+
+.xgd-title-title{
+
+	font-family: "Microsoft YaHei";
+	color:#fbfffb;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.xgd-location-nav
+{
+	margin-bottom: 0px;
+}
+
+.leftMenu{margin:10px;margin-top:5px;}
+.leftMenu .panel-heading{font-size:14px;padding-left:20px;height:36px;line-height:36px;color:white;position:relative;cursor:pointer;}/*转成手形图标*/
+.leftMenu .panel-heading span{position:absolute;right:10px;top:12px;}
+.leftMenu .menu-item-left{padding: 2px; background: transparent; border:1px solid transparent;border-radius: 6px;}
+.leftMenu .menu-item-left:hover{background:#C4E3F3;border:1px solid #1E90FF;}
+
+
+
+.xgd-content-right
+{
+	padding:20px;
+}
+
+
+/** 公共样式 */
+.xgd-cancel-pad-margin
+{
+	padding:0px;
+	margin:0px;
+}
+
+.xgd-cancel-pad
+{
+	padding:0px;
+}
+
+.xgd-margin-top-40
+{
+	margin-top: 40px;
+}
+
+.xgd-float-right
+{
+	float:right;
+}
+
+.xgd-color-d94714
+{
+	color:#d94714;
+}
+
+.xgd-height-260
+{
+	height: 260px;
+}
+/***首页右侧***/
+
+.xgd-small-box
+{
+	display: block;
+	background: #5baff5;
+}
+
+.xgd-inner
+{
+	padding:30px 0 30px 50px;
+}
+
+.xgd-inner-time
+{
+	background: url("../images/inner-time.png") no-repeat 0 7px ;
+	font-size: 30px;
+	color:#FFF;
+	padding-left: 50px;
+}
+
+.xgd-inner-box
+{
+	padding: 15px 0px 15px 15px;
+	background: #55a6e8;
+}
+
+.xgd-inner-box p
+{
+	font-size: 22px;
+	color:#FFF;
+}
+
+
+
+.xgd-small-box-2
+{
+	display: block;
+	background: #ce83de;
+}
+
+.xgd-small-box-2 p
+{
+	font-size: 22px;
+	color:#FFF;
+}
+
+.xgd-inner-box-2
+{
+	padding: 15px 0px 15px 15px;
+	background: #c37dd3;
+}
+
+.xgd-inner-box-2 p
+{
+	display: block;
+	background: url("../images/inner-usr.png") no-repeat 0 0 ;
+	font-size: 22px;
+	color:#FFF;
+	padding-left: 50px;
+}
+
+
+
+.xgd-small-box-3
+{
+	display: block;
+	background: #55d98d;
+}
+
+.xgd-small-box-3 p
+{
+	font-size: 22px;
+	color:#FFF;
+}
+
+.xgd-inner-box-3
+{
+	padding: 15px 0px 15px 15px;
+	background: #51cf86;
+}
+
+.xgd-inner-box-3 p
+{
+	display: block;
+	background: url("../images/inner-usr-2.png") no-repeat 0 0 ;
+	font-size: 22px;
+	color:#FFF;
+	padding-left: 50px;
+}
+
+
+.xgd-inner-table
+{
+
+}
+
+.xgd-inner-table td
+{
+	padding:0;
+	margin:0;
+}
+
+
+
+
+.xgd-inner-table p
+{
+	line-height: 30px;
+	margin-bottom: 0px;
+}
+
+
+.xgd-inner-table a
+{
+	line-height: 30px;
+	color:#73a791;
+	font-size: 16px;
+}
