@@ -39,6 +39,29 @@ function togglePanel(obj,menuType)
     }
 }
 
+//重新启用；
+function reStartUse()
+{
+  BootstrapDialog.show({
+    title:"零交易撤机启用终端",
+    message:"您本次共选中XX台终端，重新启用后本流程结束，终端可正常交易，确定重新启用么？",
+    buttons:[{
+      label:"确定",
+      cssClass:"btn-primary",
+      action:function(){
+        alert("请在函数体内定义这个按钮的行为，app.js第52行");
+      }
+    },
+    {
+      label:"取消",
+      cssClass:"btn-warning",
+      action:function(dialog){
+        dialog.close(); 
+      }
+    }]
+  })
+}
+
 /** bootstrap-dialog 居中对齐解决方案 2016-11-02 */
 function setModalMaxHeight(element) {
   this.$element     = $(element);  
@@ -73,6 +96,7 @@ $(window).resize(function() {
 });
 
 $(function(){
+
     //初始化页面对齐；
     winHeight   = $(window).height();
     topHeight   = $("#topnav").height();
@@ -85,24 +109,86 @@ $(function(){
     $("#xgd-content-left").height(rightContentHeight).css({"overflow-y":"auto"});
     $("#xgd-content-right").height(rightContentHeight);
     $("#xgd-content-right").css({"overflow":"auto"});
-    if( $.isArray(xgd_menu)  && xgd_menu.length > 0)
-    {
-      /*
-        //展开菜单；
-       $("#xgd-content-left").children(":first").children().eq(xgd_menu[0]).find("ul").eq(0).slideDown();
-       if(xgd_menu[1])
-       {
-          $("#xgd-content-left").children(":first").children().eq(xgd_menu[0]).find("ul").eq(0).children().eq(xgd_menu[1]).find("ul").slideDown();
-          // 更改样式；
-          $("#xgd-content-left").children(":first").children().eq(xgd_menu[0]).find("ul").eq(0).children().eq(xgd_menu[1]).find("h5").find("span").removeClass("glyphicon-chevron-up").addClass('glyphicon-chevron-down');
-          
-       }
-       if(xgd_menu[2])
-       {
-          $("#xgd-content-left").children(":first").children().eq(xgd_menu[0]).find("ul").eq(0).children().eq(xgd_menu[1]).find("ul").children().eq(xgd_menu[2]).addClass('xgd-menu-cursor');
-       }
 
-       */
+    //初始化时间控件
+    if($("#dateStart").length > 0)
+    {
+
+     $('#dateStart').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+     });
+    }
+    
+     if($("#dateEnd").length > 0)
+    {
+       $('#dateEnd').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+    }
+
+    if($('#bsStartTimeA').length > 0){
+      $('#bsStartTimeA').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+     });
+    }
+     
+    
+     if($("#bsEndTimeB").length > 0)
+    {
+       $('#dateEnd').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+    }
+
+
+      if($("#moneyBackDate1").length > 0)
+    {
+       $('#moneyBackDate1').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+    }
+
+     
+
+
+
+    if( typeof(xgd_menu) != "undefined" && $.isArray(xgd_menu)  && xgd_menu.length > 0)
+    {
        $(".f_menu_box").eq(xgd_menu[0]).find(".secondPanel").first().slideDown();
        $(".f_menu_box").eq(xgd_menu[0]).find("h4").find("span").removeClass('glyphicon-plus').addClass('glyphicon-minus');
        if(xgd_menu.length == 2){
@@ -114,8 +200,6 @@ $(function(){
         $(".f_menu_box").eq(xgd_menu[0]).find(".secondPanel").find("span").eq(xgd_menu[1]).removeClass("glyphicon-chevron-up").addClass('glyphicon-chevron-down');
         $(".f_menu_box").eq(xgd_menu[0]).find(".secondPanel").find("ul.thirdPanel").eq(xgd_menu[1]).children("li").eq(xgd_menu[2]).addClass('xgd-menu-cursor');
        }
-      
-       
     }
   
     if($("#tableBox").length > 0)
@@ -161,6 +245,29 @@ $(function(){
     //分页处理；
     if($("#paginator").length > 0)
     {
+     var options = {
+          currentPage: 3,
+          totalPages: 10,
+          itemTexts: function (type, page, current) {
+                  switch (type) {
+                  case "first":
+                      return "第一页";
+                  case "prev":
+                      return "上一页";
+                  case "next":
+                      return "下一页";
+                  case "last":
+                      return "最后一页";
+                  case "page":
+                      return page;
+                  }
+              }
+      }
+
+      $('#paginator').bootstrapPaginator(options);
+
+
+      //设置位置；
       var pagintorHeight = $("#paginator").offset();
       var offsetParent=$("#paginator").offsetParent();
       var parentOffset = offsetParent.offset();   
@@ -174,7 +281,31 @@ $(function(){
         $("#paginator").parent().css({"position":"relative"});
         $("#paginator").css({"position":"absolute","top":paginatorTop+"px"});
       }
+
+      //进件，加机页面，Form表单元素对齐；
+      if($(".agentDv").length > 0 && $(".applyDate").length > 0)
+      {
+       $(".agentDv").width($(".applyDate").width());
+      }
+      if($(".bTableType").length > 0 && $(".bsName").length > 0)
+      {
+        $(".bTableType").width($(".bsName").width() + 20);
+      }
+      
+      if($(".ywsource").length > 0 && $(".zdh").length > 0)
+      {
+        $(".ywsource").width($(".zdh").width());
+      }
     }
+
+
+    //弹出详细内容页，设置页面宽度；
+    if($("#additionPanel").length > 0 && $("#leftForm").length > 0)
+    {
+      var leftFormWidth = $("#leftForm").width() * 0.8;
+      $("#additionPanel").width(leftFormWidth);
+    }
+    
 });
 
 

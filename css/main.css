@@ -62,6 +62,11 @@ h4,h5
 	background: #2f323b;
 }
 
+.xgd-font-color-40a36c
+{
+	color:#40a36c;
+}
+
 .xgd-bg-color-fff
 {
 	background: #FFF;
@@ -93,6 +98,11 @@ h4,h5
 .xgd-padding-left-15
 {
 	padding-left: 15px;
+}
+
+.xgd-padding-left-20
+{
+	padding-left: 20px;
 }
 
 
@@ -522,3 +532,7 @@ h4,h5
   text-align: left;
   vertical-align: middle;
 }
+
+
+/** 内容详细页 */
+

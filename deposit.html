@@ -146,55 +146,17 @@
                 </tbody>
               </table>
             </div>
+            <div id="paginator"></div>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="./lib/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-
-
-    <script type="text/javascript" src="./lib/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="./lib/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
-
-
-
-    <script src="./js/app.js"></script>
+      
     <script type="text/javascript">
       xgd_menu = [0,0,1];
-
-     $('#dateStart').datetimepicker({
-        language:  'zh-CN',
-        weekStart: 1,
-        todayBtn:  1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 2,
-        minView: 2,
-        forceParse: 0
-    });
-
-
-      $('#dateEnd').datetimepicker({
-        language:  'zh-CN',
-        weekStart: 1,
-        todayBtn:  1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 2,
-        minView: 2,
-        forceParse: 0
-    });
-
     </script>
     <!-- scripts by this app -->
     
-
+    <?php require_once "./footer.html"; ?>
   </body>
 </html>
