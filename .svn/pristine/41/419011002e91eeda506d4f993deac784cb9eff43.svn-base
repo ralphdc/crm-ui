@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统</title>
+     <?php require_once "./head.html"; ?>
+  </head>
+  <body>
+      <div class="container-fluid" id="contentBox">
+        <div class="row" style="padding-top:15px;">
+          <div class="col-md-8" >
+            <form role="form" class="form-horizontal" id="leftForm">
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><h4 class="text-center xgd-font-color-40a36c">变更审核</h4></div>
+                  <div class="panel-body">
+                    <table class="table table-strip table-hover xgd-cancel-pad-margin">
+                      <tr>
+                        <td width="10%">业务类型:</td>
+                        <td>变更</td>
+                        <td width="10%">业务编号:</td>
+                        <td>BG201601011234</td>
+                        <td width="12%">业务申请人:</td>
+                        <td>张三</td>
+                        <td width="13%">业务申请时间:</td>
+                        <td width="18%">2016/01/01 23:59:59</td>
+                      </tr>
+                      <tr>
+                        <td>商户号:</td>
+                        <td>8400011100</td>
+                        <td>商户名称:</td>
+                        <td>深圳市大成商行</td>
+                        <td>商户联系电话:</td>
+                        <td>18888888888</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                       <tr>
+                        <td>变更原因:</td>
+                        <td>店铺结业/转让/停业</td>
+                        <td>协议重签：</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" href="#bussinessInfo">商户变更信息</a></h4>
+                  </div>
+                  <div id="bussinessInfo" class="collapse in xgd-padding-right-15">
+                    <div class="panel-body">
+                      <table class="table table-bordered" >
+                        <thead>
+                          <tr style="background:rgb(245, 245, 245)">
+                            <td width="30%">变更信息</td>
+                            <td width="30%">原值</td>
+                            <td>新变更值</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">MCC</td>
+                            <td>5411-大型仓储式超级市场</td>
+                            <td>5541-加油站，服务站</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">扣率</td>
+                            <td>
+                              内卡借记卡：0.56%，22封顶；<br/>
+                              内卡贷记卡：0.66%;<br/>
+                              外卡：2%
+                            </td>
+                            <td>
+                              内卡借记卡：0.57%，22封顶；<br/>
+                              内卡贷记卡：0.67%;<br/>
+                              外卡：2%
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">商户名</td>
+                            <td>深圳市大成商行</td>
+                            <td>深圳市大成商行有限公司</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div><!-- panel end -->
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" href="#bussinessInfo">终端变更信息</a></h4>
+                  </div>
+                  <div id="bussinessInfo" class="collapse in xgd-padding-right-15">
+                    <div class="panel-body">
+                      <table class="table table-bordered" >
+                        <thead>
+                          <tr style="background:rgb(245, 245, 245)">
+                            <td width="20%">终端号-机身号</td>
+                            <td width="20%">变更信息</td>
+                            <td>原值</td>
+                            <td>新变更值</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"></td>
+                            <td>装机地址</td>
+                            <td>广东省深圳市南山区科技中二路</td>
+                            <td>广东省深圳市福田区彩田路</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="form-group">
+                        <label class="col-sm-1 control-label">附件：</label>
+                        <div class="col-sm-10">
+                          <ul class="xgd-in-check-ul">
+                            <li>
+                              <img src="./images/slt.png">
+                              <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                               <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                              <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                              <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                               <p class="text-center">营业执照</p>
+                            </li>
+                             <li>
+                              <img src="./images/slt.png">
+                              <p class="text-center">营业执照</p>
+                            </li>
+                          </ul>
+                        </div>
+                       </div><!-- form-group end -->
+                    </div>
+                  </div>
+                </div><!-- panel end -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#handleResult" data-toggle="collapse">处理</a>
+                    </h4>
+                  </div><!-- heading end -->
+                  <div class="collapse in" id="handleResult">
+                    <div class="panel-body">
+                       <div class="form-group">
+                        <label class="col-md-2 control-label">审核结果 *</label>
+                        <div class="col-md-8">
+                          <label class="radio-inline col-md-4">
+                            <input type="radio" name="checkresult" id="accept" value="1"> 通过
+                          </label>
+                          <label class="radio-inline col-md-4">
+                            <input type="radio" name="checkresult" id="refuse" value="0"> 不通过
+                          </label>
+                        </div><!-- col-md-8 end -->
+                      </div><!-- form-group end -->
+
+                       <div class="form-group">
+                        <label class="col-md-2 control-label">备注：</label>
+                        <div class="col-md-8">
+                           <textarea class="form-control" rows="3" placeholder="100个汉字内" style="resize:none"></textarea>
+                        </div><!-- col-md-8 end -->
+                      </div><!-- form-group end -->
+
+                    </div><!-- panel-body end -->
+
+                  </div><!-- collapse end -->
+                </div><!-- panel end -->
+             </div>
+             <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-2"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;确定&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+              <div class="col-md-2"><button type="button" class="btn btn-danger">&nbsp;&nbsp;&nbsp;&nbsp;取消&nbsp;&nbsp;&nbsp;&nbsp;</button></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
+
+             </div><!-- row end -->
+             <div style="height:20px;clear:both;"></div>
+          </form>
+          </div><!-- md-8 end -->
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title"><a href="#stepsInfo" data-toggle="collapse">流程简要信息</a></h4>
+                  </div>
+                  <div class="collapse in" id="stepsInfo">
+                    <div class="panel-body">
+                      <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                          <label class="col-md-3">节点名称1</label>
+                        </div><!-- form-group end -->
+                        <div class="form-group">
+                          <label class="col-md-3">处理信息：</label>
+                          <div class="col-md-8">撤机申请已提交</div>
+                        </div><!-- form-group end -->
+                        <div class="form-group">
+                          <label class="col-md-3">处理人：</label>
+                          <div class="col-md-2">张三</div>
+                          <label class="col-md-3">处理时间：</label>
+                          <div class="col-md-4">2016/01/01 23:59:59</div>
+                        </div><!-- form-group end -->
+                        <div class="form-group">
+                          <label class="col-md-3">备注：</label>
+                          <div class="col-md-3">无</div>
+                        </div><!-- form-group end -->
+                      </form>
+                    </div><!-- body end -->
+                    <div class="panel-footer">
+                      <a href="#">更多信息</a>
+                    </div>
+                  </div><!-- stepsInfo end -->
+                </div><!-- panel end -->
+              </div><!-- col-md-5 end -->
+            </div><!-- row end -->
+          </div>
+        </div>
+        </div>
+
+     <?php require_once "footer.html"; ?>
+
+  </body>
+</html>

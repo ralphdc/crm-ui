@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统</title>
+    <?php require_once "head.html"; ?>
+  </head>
+  <body style="overflow:hidden">
+    <form class="form-inline" role="form">
+      <div class="form-group applyDate">
+        <label>申请日期:</label>
+        <input type="text" class="form-control"  placeholder="开始时间" size="10"  id="dateStart" data-date-format="yyyy-mm-dd">
+        -
+         <input type="text" class="form-control"  placeholder="结束时间" size="10" id="dateEnd" data-date-format="yyyy-mm-dd">
+      </div>
+      <div class="form-group xgd-padding-left-20 bsName">
+        <label>商户名称:</label>
+        <input type="text" class="form-control"  placeholder="模糊匹配" size="15">
+      </div>
+       <div class="form-group xgd-padding-left-20">
+        <label>任务名称:</label>
+         <select class="form-control">
+          <option>全部</option>
+        </select>
+      </div>
+      <div class="form-group xgd-padding-left-20" id="ckx">
+        <label>商户入网类型:</label>
+        <select class="form-control">
+          <option>全部</option>
+        </select>
+      </div>
+      <div style="height:15px; clear: both; "></div>  
+      <div class="form-group xgd-padding-left-10 agentDv">
+        <label style="">&nbsp;代理商:</label>
+        <select class="form-control" style="width:78%">
+          <option>全部</option>
+        </select>
+      </div>
+      <div class="form-group bTableType">
+        <label>白名单类型:</label>
+        <select class="form-control" style="width:61%">
+          <option>全部</option>
+        </select>
+      </div>
+      <div class="form-group xgd-padding-left-10">
+        <label>业务来源:</label>
+        <select class="form-control">
+          <option>全部</option>
+        </select>
+      </div>
+      <div class="form-group" id="searchSubmit" style="padding-left:200px;">
+        <button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;查询&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <button type="button" class="btn btn-warning">&nbsp;&nbsp;&nbsp;&nbsp;重置&nbsp;&nbsp;&nbsp;&nbsp;</button>
+      </div>
+       <div style="height:15px; clear: both; "></div>      
+    <button type="button" class="btn btn-success">&nbsp;&nbsp;变更申请&nbsp;&nbsp;</button>    
+  </form>
+  <div id="tableBox">
+    <table class="table table-striped table-hover table-bordered xgd-margin-top-20 xgd-table">
+      <thead>
+        <td> 
+          <div class="checkbox">
+            <label><input type="checkbox"> &nbsp;&nbsp;全选</label>
+          </div>
+        </td>
+        <td>任务名称</td>
+        <td>商户名称</td>
+        <td>业务来源</td>
+        <td>归属公司</td>
+        <td>业务员</td>
+        <td>代理商名称</td>
+        <td>商户入网类型</td>
+        <td>白名单类型</td>
+        <td>申请时间</td>
+        <td>当前处理人/机构</td>
+        <td>备注</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="check"> 
+            <input type="checkbox" />
+          </td>
+          <td><a class="xgd-td-a" href="./alterkf-detail.html" target="_blank">变更扣率审核</a></td>
+          <td><a class="xgd-td-a" href="./alterkf-detail.html" target="_blank">深圳大成商户</a></td>
+          <td>代理商平台/商户平台易收单/CRM/易装机</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td>营业执照</td>
+          <td>工商/实名/扣率/无</td>
+          <td>2016-10-21 09:51:20</td>
+          <td class="text-center">张三</td>
+          <td>备注</td>
+        </tr>
+        <tr>
+           <td class="check"> 
+            <input type="checkbox">
+          </td>
+          <td><a class="xgd-td-a" href="./alterinfo-detail.html" target="_blank">变更信息审核</a></td>
+          <td><a class="xgd-td-a" href="./alterinfo-detail.html" target="_blank">深圳大成商户</a></td>
+          <td>代理商平台/商户平台易收单/CRM/易装机</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td>营业执照</td>
+          <td>工商/实名/扣率/无</td>
+          <td>2016-10-21 09:51:20</td>
+          <td class="text-center">张三</td>
+          <td>备注</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="paginator"></div>
+    <?php require_once "./footer.html"; ?>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统-换机</title>
+    <?php include_once "head.html"; ?>
+  </head>
+  <body>
+    <form class="form-inline" role="form" id="brForm" wdlength="0.68">
+    <div class="form-group">
+      <label class="control-label">申请日期:</label>
+      <input type="text" class="form-control input-sm"  placeholder="开始时间" id="dateStart" data-date-format="yyyy-mm-dd">
+      -
+      <input type="text" class="form-control input-sm"  placeholder="结束时间" id="dateEnd" data-date-format="yyyy-mm-dd">
+    </div>
+
+    <div class="form-group xgd-padding-left-10">
+      <label class="control-label">商户名称:</label>
+      <input type="text" class="form-control input-sm"  placeholder="">
+    </div>
+
+    <div class="form-group xgd-padding-left-10">
+      <label class="control-label">业务来源:</label>
+      <input type="text" class="form-control input-sm"  placeholder="">
+    </div>
+
+    <div class="form-group xgd-padding-left-10">
+      <label class="control-label">商户入网类型:</label>
+      <input type="text" class="form-control input-sm"  placeholder="">
+    </div>
+    <div style="height:15px; clear: both; "></div> 
+    <div class="form-group">
+      <label class="control-label">&nbsp;&nbsp;&nbsp;代理商:</label>
+      <input type="text" class="form-control input-sm" size="48"  placeholder="">
+    </div>
+
+    <div class="form-group xgd-padding-left-13">
+      <label class="control-label ">&nbsp;&nbsp;&nbsp;商户号:</label>
+      <input type="text" class="form-control input-sm"  placeholder="">
+    </div>
+
+    <div class="form-group xgd-padding-left-13">
+      <label class="control-label ">&nbsp;&nbsp;&nbsp;终端号:</label>
+      <input type="text" class="form-control input-sm"  placeholder="">
+    </div>
+
+    <div class="form-group xgd-padding-left-300">
+      <button class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;查询&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    </div>
+
+     <div class="form-group xgd-padding-left-40">
+      <button class="btn btn-warning">&nbsp;&nbsp;&nbsp;&nbsp;重置&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    </div>
+
+    <div style="height:15px; clear: both; "></div> 
+    <button type="button" class="btn btn-success">&nbsp;&nbsp;分发任务&nbsp;&nbsp;</button>
+  </form>
+  <div id="tableBox">
+    <table class="table table-striped table-hover table-bordered xgd-margin-top-20 xgd-table">
+      <thead>
+        <td> 
+            <div class="checkbox">
+              <label><input type="checkbox"> &nbsp;&nbsp;全选</label>
+            </div>
+        </td>
+        <td>任务名称</td>
+        <td>业务来源</td>
+        <td>撤机类型</td>
+        <td>商户名称</td>
+        <td>商户号</td>
+        <td>终端号</td>
+        <td>机身号</td>
+        <td>归属公司</td>
+        <td>业务员</td>
+        <td>代理商名称</td>
+        <td>渠道类型</td>
+        <td>商户入网类型</td>
+        <td>快递公司</td>
+        <td>快递单号</td>
+        <td>业务申请人</td>
+        <td>申请时间</td>
+        <td>当前处理人/机构</td>
+        <td>备注</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="check"> 
+            <input type="checkbox" />
+          </td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">确认旧机回收</a></td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">代理商平台</a></td>
+          <td>零交易撤机</td>
+          <td>深圳大成银行</td>
+          <td>--</td>
+          <td>--</td>
+          <td>
+            <a href="#" class="clientDetail">
+              <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </td>
+          <td>--</td>
+          <td class="text-center">--</td>
+          <td>直营</td>
+          <td>租赁合同</td>
+          <td>顺丰</td>
+          <td>6234567890</td>
+          <td>--</td>
+          <td>2016-10-21 09:51:21</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="paginator"></div>
+  <?php require_once "footer.html"; ?>
+  </body>
+</html>

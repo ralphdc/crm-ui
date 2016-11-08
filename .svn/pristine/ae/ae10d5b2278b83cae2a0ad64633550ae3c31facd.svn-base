@@ -1,0 +1,82 @@
+  <form class='form-horizontal' role='form'>
+        <div class='form-group'>
+            <label class='control-label col-md-2'>所属代理商:</label>
+            <div class='col-md-4'>
+                <input type='text' value='深圳市通宝支付' class='form-control input-sm'>
+            </div>
+            <label class='control-label col-md-2'>商户名称:</label>
+            <div class='col-md-4'>
+                <input type='text' value='深圳市通宝支付' class='form-control input-sm'>
+            </div>
+        </div>
+        <div class='form-group'>
+            <label class='control-label col-md-2'>法人姓名/手机号:</label>
+            <div class='col-md-1' style="padding-right:0px">
+                <input type='text' value='梁静茹' class='form-control input-sm'>
+            </div>
+            <div class='col-md-3'>
+                <input type='text' value='深圳市通宝支付' class='form-control input-sm'>
+            </div>
+            <label class='control-label col-md-2'>法人身份证号码:</label>
+            <div class='col-md-4'>
+                <input type='text' value='558656565656' class='form-control input-sm'>
+            </div>
+        </div>
+        <div class='form-group'>
+            <label class='control-label col-md-2'>开户行:</label>
+            <div class='col-md-4'>
+                <input type='text' value='中国银行深圳支行' class='form-control input-sm'>
+            </div>
+            <label class='control-label col-md-2'>银行账号:</label>
+            <div class='col-md-4'>
+                <input type='text' value='123456789123456789' class='form-control input-sm'>
+            </div>
+        </div>
+         <div class='form-group'>
+            <label class='control-label col-md-2'>白名单说明:</label>
+            <div class='col-md-8'>
+                <textarea class="form-control" rows="3" style="resize:none" placeholder=""></textarea>
+            </div>
+        </div>
+         <div class='form-group'>
+            <label class='control-label col-md-2'>附件：</label>
+            <div class='col-md-10'>
+              <div class="row">
+                    <div class="col-md-3">
+                       <img src="./images/slt.png">
+                        <p>银行卡正面</p>
+                    </div>
+                      <div class="col-md-3">
+                        <img src="./images/slt.png">
+                        <p>法人身份证（正）</p>
+                    </div>
+                      <div class="col-md-3">
+                        <img src="./images/slt.png">
+                        <p>法人身份证（反）</p>
+                    </div>
+                      <div class="col-md-3">
+                        <img src="./images/slt.png">
+                        <p>法人手持银行卡</p>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="form-group">
+            <label class="col-md-2 control-label">审核结果 *</label>
+            <div class="col-md-8">
+              <label class="radio-inline col-md-4">
+                <input type="radio" name="checkresult" id="accept" value="1"> 通过
+              </label>
+              <label class="radio-inline col-md-4">
+                <input type="radio" name="checkresult" id="refuse" value="0"> 不通过
+              </label>
+            </div><!-- col-md-8 end -->
+        </div><!-- form-group end -->
+        <div class="form-group">
+        <label class="col-md-2 control-label">备注：</label>
+        <div class="col-md-8">
+            <textarea class="form-control" rows="3" placeholder="100个汉字内" style="resize:none"></textarea>
+        </div><!-- col-md-8 end -->
+        </div><!-- form-group end -->
+    </form>

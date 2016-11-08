@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XGD-CRM管理信息系统-换机</title>
+    <?php include_once "head.html"; ?>
+  </head>
+  <body style="overflow:hidden">
+    <form class="form-inline" role="form" id="brForm" wdlength="0.68">
+    <div class="form-group">
+      <label class="control-label">处理日期:</label>
+      <input type="text" class="form-control input-sm"  placeholder="开始时间" id="dateStart" data-date-format="yyyy-mm-dd">
+      -
+      <input type="text" class="form-control input-sm"  placeholder="结束时间" id="dateEnd" data-date-format="yyyy-mm-dd">
+    </div>
+
+    <div class="form-group xgd-padding-left-10">
+      <label class="control-label">商户名称:</label>
+      <input type="text" class="form-control input-sm"  placeholder="">
+    </div>
+
+    <div class="form-group xgd-padding-left-10">
+      <label class="control-label">业务类型:</label>
+      <select>
+        <option>全部</option>
+      </select>
+    </div>
+
+    <div class="form-group xgd-padding-left-10">
+      <label class="control-label">任务名称:</label>
+       <select>
+        <option>全部</option>
+      </select>
+    </div>
+    <div style="height:15px; clear: both; "></div> 
+    <div class="form-group">
+      <label class="control-label">&nbsp;&nbsp;&nbsp;代理商:</label>
+      <input type="text" class="form-control input-sm" size="48"  placeholder="">
+    </div>
+
+    <div class="form-group xgd-padding-left-13">
+      <label class="control-label ">&nbsp;&nbsp;&nbsp;业务来源:</label>
+       <select>
+        <option>全部</option>
+      </select>
+    </div>
+
+    <div class="form-group xgd-padding-left-13">
+      <label class="control-label ">&nbsp;&nbsp;&nbsp;商户入网类型:</label>
+      <select>
+        <option>全部</option>
+      </select>
+    </div>
+
+    <div class="form-group xgd-padding-left-300">
+      <button class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;查询&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    </div>
+
+     <div class="form-group xgd-padding-left-40">
+      <button class="btn btn-warning">&nbsp;&nbsp;&nbsp;&nbsp;重置&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    </div>
+
+    <div style="height:15px; clear: both; "></div> 
+    <button type="button" class="btn btn-success">&nbsp;&nbsp;分发任务&nbsp;&nbsp;</button>
+  </form>
+  <div id="tableBox">
+    <table class="table table-striped table-hover table-bordered xgd-margin-top-20 xgd-table">
+      <thead>
+        <td width="20%">业务类型</td>
+        <td>业务状态</td>
+        <td>已处理任务名称</td>
+        <td>商户名称</td>
+        <td>业务来源</td>
+        <td>嘉联业务员</td>
+        <td>归属公司</td>
+        <td>代理商业务员</td>
+        <td>代理商名称</td>
+        <td>渠道类型</td>
+        <td>商户入网类型</td>
+        <td>终端号</td>
+        <td>机身号</td>
+        <td>处理时间</td>
+        <td>流程信息</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">进件</a></td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">已完成</a></td>
+          <td>进件审核</td>
+          <td>--</td>
+          <td>易收单</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td class="text-center">--</td>
+          <td>代理商</td>
+          <td>营业执照</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>流程详情</td>
+        </tr>
+         <tr>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">加机</a></td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">待提交</a></td>
+          <td>加机审核</td>
+          <td>--</td>
+          <td>代理商平台</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td class="text-center">--</td>
+          <td>代理商</td>
+          <td>营业执照</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>流程详情</td>
+        </tr>
+         <tr>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">直营撤机</a></td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">待电话回访</a></td>
+          <td>进件审核</td>
+          <td>--</td>
+          <td>易收单</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td class="text-center">--</td>
+          <td>代理商</td>
+          <td>营业执照</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>流程详情</td>
+        </tr>
+         <tr>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">代理商撤机</a></td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">已完成</a></td>
+          <td>进件审核</td>
+          <td>--</td>
+          <td>易收单</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td class="text-center">--</td>
+          <td>代理商</td>
+          <td>营业执照</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>流程详情</td>
+        </tr>
+         <tr>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">零交易撤机</a></td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">已完成</a></td>
+          <td>进件审核</td>
+          <td>--</td>
+          <td>易收单</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td class="text-center">--</td>
+          <td>代理商</td>
+          <td>营业执照</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>流程详情</td>
+        </tr>
+         <tr>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">换机</a></td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">已完成</a></td>
+          <td>进件审核</td>
+          <td>--</td>
+          <td>易收单</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td class="text-center">--</td>
+          <td>代理商</td>
+          <td>营业执照</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>流程详情</td>
+        </tr>
+         <tr>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">变更</a></td>
+          <td><a class="xgd-td-a" href="./recycle-page.html" target="_blank">已完成</a></td>
+          <td>进件审核</td>
+          <td>--</td>
+          <td>易收单</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td class="text-center">--</td>
+          <td>代理商</td>
+          <td>营业执照</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>流程详情</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="paginator"></div>
+  <?php require_once "footer.html"; ?>
+  </body>
+</html>
